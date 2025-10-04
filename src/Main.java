@@ -92,7 +92,7 @@ public class Main {
                     System.out.print("Ingrese el número que desea insertar: ");
                     if (sc.hasNextInt()) {
                         int num = sc.nextInt();
-                        tree.insert(num);
+                        tree.insert(num); //Se llama al metodo insertar para colocar numero
                         System.out.println("Número insertado correctamente.");
                     } else {
                         System.out.println("Error: debe ingresar un número entero válido.");
@@ -102,15 +102,15 @@ public class Main {
 
                 case 2: // Mostrar recorrido inorden
                     System.out.println("Mostrando recorrido inorden del árbol:");
-                    tree.inorder();
+                    tree.inorder(); //Se llama el metodo inorden para mostrar los numeros de menor a mayor
                     break;
 
                 case 3: // Buscar número
                     System.out.print("Ingrese el número que desea buscar: ");
                     if (sc.hasNextInt()) {
                         int numBuscar = sc.nextInt();
-                        boolean encontrado = tree.search(numBuscar);
-                        if (encontrado) {
+                        boolean encontrado = tree.search(numBuscar); //Busca el número para ver si existe en el arbol
+                        if (encontrado) { //Comienza la condicional
                             System.out.println("El número " + numBuscar + " SÍ se encuentra en el árbol.");
                         } else {
                             System.out.println("El número " + numBuscar + " NO se encuentra en el árbol.");
@@ -128,7 +128,7 @@ public class Main {
                 default:
                     System.out.println("Error: opción no válida. Por favor, seleccione entre 1 y 4 ");
                     sc.next();
-                    break;
+                    break; //Si el usuario ingresa un numero no valido del menu
 
             }
         } while (opcion != 4);
