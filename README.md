@@ -44,6 +44,6 @@ Error al elegir una opción incorrecta del menú:
 
 
 # Integrantes
-Angie Paola Botero Agudelo
-Andres Felipe Quiroz Agudelo
-Andres Camilo Ospino Mejía
+- Angie Paola Botero Agudelo
+- Andres Felipe Quiroz Agudelo
+- Andres Camilo Ospino Mejía
